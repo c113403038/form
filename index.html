@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>Student Information Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
     <style>
-        body { font-family: "Times New Roman", serif; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 2px; }
-        input[type="text"] { width: 250px; padding: 3px; }
-        .button-container { margin-top: 20px; }
-        button, input[type="reset"] { padding: 5px 15px; cursor: pointer; }
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 3px;
+            border: 1px solid #767676;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #efefef;
+            border: 1px solid #767676;
+            border-radius: 0px;
+            padding: 4px 12px;
+            font-size: 16px;
+            cursor: pointer;
+            color: black;
+            margin-right: 5px;
+        }
+
+        .btn:active {
+            background-color: #d5d5d5;
+        }
     </style>
 </head>
 <body>
@@ -30,10 +61,10 @@
             <input type="text" id="sid" name="sid" value="Your student ID">
         </div>
 
-        <div class="button-container">
-            <button type="submit">Submit</button>
-            <input type="reset" value="重設">
-        </div>
+        <br>
+
+        <button type="submit" class="btn">Submit</button>
+        <input type="reset" class="btn" value="重設">
     </form>
 
 </body>
